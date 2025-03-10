@@ -9,7 +9,7 @@ import pandas as pd
 pipe = pickle.load(open('pipe.pkl', 'rb'))
 df = pickle.load(open('df.pkl', 'rb'))
 
-st.title("Laptop Price Predictor")
+st.title("smart laptop pricing")
 st.markdown("This application uses machine learning to predict laptop prices based on various features. Enter your laptop details below to get an estimated price.")
 # Brand
 company = st.selectbox('Brand', df['Company'].unique())
